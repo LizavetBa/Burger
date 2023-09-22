@@ -48,6 +48,7 @@ body{
     overflow: hidden;
     background-image: url("../img/group.png");
     background-position: top center;
+    background-repeat: no-repeat;
 }
 .header{
     padding: 40px;
@@ -159,7 +160,7 @@ body{
     background-image: url("../img/burgers_bg.png");
     background-position: top center;
     background-size: 1400px;
-    padding-bottom: 180px;
+    padding-bottom: 200px;
 }
 .products-items{
     display: grid;
@@ -213,4 +214,81 @@ body{
 }
 .button.product-button span:first-child{
     margin-right: 10px;
+}
+.order{
+    background-image: url("../img/order_bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    overflow: hidden;
+}
+
+.order .container{
+    position: relative;
+}
+.order-image{
+    position: absolute;
+    top: 0;
+    right: calc(100% - 764px);
+    z-index: -1;
+}
+.order-form{
+    background: #211A16;
+    border: 1px solid #353535;
+    border-radius: 16px;
+    margin-top: 60px;
+    max-width: 426px;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    margin-left: 674px;
+}
+.order-form-text{
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+.order-form-inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.order-form-input {
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100% );
+    width:345px;
+    height: 63px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-form-input input{
+    padding: 20px 10px;
+    background: #211A16;
+    border-radius: 8px;
+    width:342px;
+    height: 60px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid transparent;
+    color: #e3bd95;
+    font-size: 20px;
+}
+.order-form-inputs .button{
+    width: 345px;
+    height: 63px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.footer{
+    padding: 60px 0;
+}
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rights{
+    font-size: 20px;
+    line-height: 20px;
 }
